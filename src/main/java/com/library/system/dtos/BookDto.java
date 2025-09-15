@@ -1,16 +1,10 @@
-package com.library.system.model;
+package com.library.system.dtos;
 
-public class Book {
-    private Long id;
+public class BookDto {
     private String title;
     private String author;
     private String description;
     private Double price;
-
-
-    public Long getId() {
-        return id;
-    }
 
     public String getTitle() {
         return title;
@@ -26,10 +20,6 @@ public class Book {
 
     public Double getPrice() {
         return price;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public void setTitle(String title) {

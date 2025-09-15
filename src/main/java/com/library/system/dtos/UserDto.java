@@ -1,14 +1,9 @@
-package com.library.system.model;
+package com.library.system.dtos;
 
-public class User {
-    private Long id;
+public class UserDto {
     private String name;
     private String surname;
     private Integer age;
-
-    public Long getId() {
-        return id;
-    }
 
     public String getName() {
         return name;
@@ -18,13 +13,8 @@ public class User {
         return surname;
     }
 
-
-    public Integer getAge(Integer age) {
-        return this.age;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public Integer getAge() {
+        return age;
     }
 
     public void setName(String name) {
@@ -38,6 +28,4 @@ public class User {
     public void setAge(Integer age) {
         this.age = age;
     }
-
-
 }
