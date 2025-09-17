@@ -9,13 +9,15 @@ import org.springframework.stereotype.Service;
 public class BookServiceImpl implements BookService {
 
     public Book createBook(BookDto bookDto) {
-        Book book = new Book();
+//        Book book = new Book();
+//
+//        book.setTitle(bookDto.getTitle());
+//        book.setAuthor(book.getAuthor());
+//        book.setDescription(bookDto.getDescription());
+//        book.setPrice(bookDto.getPrice());
 
-        book.setTitle(bookDto.getTitle());
-        book.setAuthor(book.getAuthor());
-        book.setDescription(bookDto.getDescription());
-        book.setPrice(bookDto.getPrice());
-
-        return book;
+//        return book;
+//    }
+        return null;
     }
 }

@@ -1,43 +1,22 @@
 package com.library.system.model;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
 public class User {
     private Long id;
     private String name;
     private String surname;
     private Integer age;
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-
-    public Integer getAge(Integer age) {
-        return this.age;
-    }
-
-    public void setId(Long id) {
+    public User(Long id, String name, String surname, Integer age) {
         this.id = id;
-    }
-
-    public void setName(String name) {
         this.name = name;
-    }
-
-    public void setSurname(String surname) {
         this.surname = surname;
-    }
-
-    public void setAge(Integer age) {
         this.age = age;
     }
-
-
 }

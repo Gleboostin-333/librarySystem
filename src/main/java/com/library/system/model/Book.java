@@ -1,5 +1,10 @@
 package com.library.system.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Book {
     private Long id;
     private String title;
@@ -8,43 +13,11 @@ public class Book {
     private Double price;
 
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public Double getPrice() {
-        return price;
-    }
-
-    public void setId(Long id) {
+    public Book(Long id, String title, String author, String description, Double price) {
         this.id = id;
-    }
-
-    public void setTitle(String title) {
         this.title = title;
-    }
-
-    public void setAuthor(String author) {
         this.author = author;
-    }
-
-    public void setDescription(String description) {
         this.description = description;
-    }
-
-    public void setPrice(Double price) {
         this.price = price;
     }
 }

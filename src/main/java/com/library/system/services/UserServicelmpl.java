@@ -14,7 +14,7 @@ public class UserServicelmpl implements UserService {
 
         user.setName(userDto.getName());
         user.setSurname(userDto.getSurname());
-        user.getAge(userDto.getAge());
+
 
         return user;
     }
