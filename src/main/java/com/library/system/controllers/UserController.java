@@ -46,4 +46,33 @@ public class UserController {
         users.add(user);
         return user;
     }
+
+    @DeleteMapping("/{id}")
+        void deleteUser(@PathVariable String id) {
+            int targetId = Integer.parseInt(id);
+            int newSize = 0;
+
+        for (int i = 0; i < users.size(); i++) {
+            if (!users.get(i).getId().equals(targetId)) {
+                newSize++;
+            }
+        }
+
+        User[] tempArray = new User[newSize];
+            int index = 0;
+
+        for (int i = 0; i < users.size(); i++) {
+            if (!users.get(i).getId().equals(targetId)) {
+                tempArray[index] = users.get(i);
+                index++;
+            }
+        }
+
+    users.clear();
+    for (int i = 0; i < tempArray.length; i++) {
+        users.add(tempArray[i]);
+    }
 }
+
+    }
+
